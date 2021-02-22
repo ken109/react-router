@@ -17,6 +17,7 @@ export interface LinkProps<S = LocationState> extends RealLinkProps<S> {
     to: LocationDescriptor<S> | ((location: Location<S>) => LocationDescriptor<S>);
 }
 
+
 const Link: React.FC<LinkProps> = (props: LinkProps) => {
     const [params] = useContext(ParamsContext)
 

@@ -1,6 +1,11 @@
 {
   "name": "@ken109/react-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "author": "Kensuke Kubo <kensuke.kubo@nimil.jp>",
+  "license": "MIT",
+  "repository": "github:ken109/react-router",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.js",
   "scripts": {
     "build": "tsc"
   },
@@ -14,6 +19,7 @@
     "typescript": "^4.1.5"
   },
   "files": [
-    "dist"
+    "dist",
+    "package.json"
   ]
 }
