@@ -5,7 +5,11 @@ It is a wrapper library of the original react-router that makes name management 
 # Instllation
 
 ```bash
-npm install -S @ken109/react-router
+npm install @ken109/react-router
+
+// or
+
+yarn add @ken109/react-router
 ```
 
 # Usage
