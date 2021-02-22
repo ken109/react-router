@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React = require('react');
 import { SwitchProps } from 'react-router'
 import { Switch as RealSwitch, useLocation } from 'react-router-dom'
 
@@ -13,7 +13,7 @@ let params: ParamsType = {}
 
 const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
     const location = useLocation()
-    const [, setParams] = useContext(ParamsContext)
+    const [, setParams] = React.useContext(ParamsContext)
 
     const searchMatch = (routes: RouteType[] = definedRoutes, now: string = ''): string => {
         for (const route of routes) {
@@ -35,7 +35,7 @@ const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
 
     searchMatch()
 
-    useEffect(() => {
+    React.useEffect(() => {
         if (_before !== JSON.stringify(params)) {
             setParams(params)
             _before = JSON.stringify(params)

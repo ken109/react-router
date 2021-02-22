@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
+      "dom",
       "esnext"
     ],
     "module": "commonjs",
@@ -13,6 +14,6 @@
     "newLine": "lf",
     "outDir": "dist",
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": false,
   }
 }

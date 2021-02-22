@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React = require('react');
 import { Link as RealLink, LinkProps as RealLinkProps } from "react-router-dom";
 import { Location, LocationDescriptorObject as RealLocationDescriptorObject, LocationState, Path } from "history";
 
@@ -19,7 +19,7 @@ export interface LinkProps<S = LocationState> extends RealLinkProps<S> {
 
 
 const Link: React.FC<LinkProps> = (props: LinkProps) => {
-    const [params] = useContext(ParamsContext)
+    const [params] = React.useContext(ParamsContext)
 
     return (
         <RealLink {...props} to={typeof props.to === 'string' || typeof props.to === 'function'

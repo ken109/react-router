@@ -1,4 +1,4 @@
-import React from 'react';
+import React = require('react');
 import { RouteProps as RealRouteProps } from "react-router";
 import { Route as RealRoute } from "react-router-dom"
 
