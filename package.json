@@ -1,13 +1,14 @@
 {
   "name": "@ken109/react-router",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Kensuke Kubo <kensuke.kubo@nimil.jp>",
   "license": "MIT",
   "repository": "github:ken109/react-router",
   "main": "./dist/index.js",
   "types": "./dist/index.d.js",
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "react": "^17.0.1",

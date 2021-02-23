@@ -19,10 +19,10 @@ export type RouteType = {
 
 export let definedRoutes: RouteType[]
 
-export function setRoutes(routes: RouteType[]) {
+export const setRoutes = (routes: RouteType[]): void => {
     definedRoutes = routes
 }
 
-export function useParams(): ParamsType {
+export const useParams = (): ParamsType => {
     return useContext(ParamsContext)[0]
 }
